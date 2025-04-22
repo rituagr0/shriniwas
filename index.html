@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechseMagic - Technology & Magic Combined</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #6e48aa 0%, #9d50bb 100%);
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo span {
+            color: #ffcc00;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li {
+            margin-left: 2rem;
+        }
+        
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-links a:hover {
+            color: #ffcc00;
+        }
+        
+        .hero {
+            padding: 5rem 0;
+            text-align: center;
+            background: url('https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+            position: relative;
+            color: white;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.6);
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+            line-height: 1.6;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: #ffcc00;
+            color: #333;
+            padding: 0.8rem 1.8rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .btn:hover {
+            background: #ffd633;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        .features {
+            padding: 5rem 0;
+            background: white;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .section-title h2 {
+            font-size: 2.5rem;
+            color: #6e48aa;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .feature-card {
+            background: #f9f9f9;
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+        
+        .feature-icon {
+            font-size: 3rem;
+            color: #9d50bb;
+            margin-bottom: 1.5rem;
+        }
+        
+        .feature-card h3 {
+            margin-bottom: 1rem;
+            color: #6e48aa;
+        }
+        
+        footer {
+            background: #333;
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin: 1.5rem 0;
+        }
+        
+        .footer-links li {
+            margin: 0 1rem;
+        }
+        
+        .footer-links a {
+            color: #ffcc00;
+            text-decoration: none;
+        }
+        
+        .social-icons {
+            margin: 1.5rem 0;
+        }
+        
+        .social-icons a {
+            color: white;
+            margin: 0 0.5rem;
+            font-size: 1.5rem;
+        }
+        
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Techse<span>Magic</span></div>
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section class="hero">
+        <div class="hero-content container">
+            <h1>Where Technology Meets Magic</h1>
+            <p>Experience the future today with our innovative solutions that blend cutting-edge technology with magical user experiences.</p>
+            <a href="#" class="btn">Explore Now</a>
+        </div>
+    </section>
+    
+    <section class="features">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Magical Offerings</h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">✨</div>
+                    <h3>AI Solutions</h3>
+                    <p>Artificial Intelligence that works like magic to solve your business problems.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔮</div>
+                    <h3>AR/VR Experiences</h3>
+                    <p>Immersive augmented and virtual reality that will blow your mind.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🧙‍♂️</div>
+                    <h3>App Development</h3>
+                    <p>Mobile apps that feel like magic with seamless user experiences.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <div class="logo">Techse<span>Magic</span></div>
+            <ul class="footer-links">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Careers</a></li>
+            </ul>
+            <div class="social-icons">
+                <a href="#">📱</a>
+                <a href="#">📘</a>
+                <a href="#">🐦</a>
+                <a href="#">📸</a>
+            </div>
+            <p>&copy; 2023 TechseMagic. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
